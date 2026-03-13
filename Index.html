@@ -1,131 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ReWear Safe – Proyecto UDIN</title>
-  styles.css
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Script: cambio de idioma -->
   <script>
     function cambiarIdioma(idioma) {
-      document.getElementById("es").style.display = idioma === "es" ? "block" : "none";
-      document.getElementById("eu").style.display = idioma === "eu" ? "block" : "none";
+      document.getElementById("es").style.display = (idioma === "es") ? "block" : "none";
+      document.getElementById("eu").style.display = (idioma === "eu") ? "block" : "none";
     }
-    </head>
+  </script>
+</head>
+
 <body>
 
-<header class="hero">
-  <h1>ReWear Safe</h1>
-  <p>Proyecto UDIN – 1º Bachillerato</p>
-  <div class="idiomas">
-    <button onclick="cambiarIdioma('es')">Castellano</button>
-    <button onclick="cambiarIdioma('eu')">Euskera</button>
-  </div>
-</header>
-7
-<!-- ================= CASTELLANO ================= -->
-<div id="es">
+  <header class="hero">
+    <h1>ReWear Safe</h1>
+    <p>Proyecto UDIN – 1º Bachillerato</p>
+    <div class="idiomas">
+      <button type="button" onclick="cambiarIdioma('es')">Castellano</button>
+      <button type="button" onclick="cambiarIdioma('eu')">Euskera</button>
+    </div>
+  </header>
 
-<section class="section">
-  <h2>¿Quiénes somos?</h2>
-  <p>
-    ReWear Safe es un proyecto escolar que transforma ropa de
-    escolar que transforma ropa de segunda mano
-    en nuevas prendas sostenibles, combinando reciclaje textil,
-    innovación tecnológica e impacto social.
-  </p>
-</section>
+  <!-- ================= CASTELLANO ================= -->
+  <div id="es">
 
-<section class="section light">
-  <h2>Nuestra idea</h2>
-  <p>
-    Recogemos ropa usada y la reutilizamos para crear nuevas prendas.
-    Algunas incorporan un dispositivo GPS protegido con silicona y cosido
-    de forma segura en la cintura, pensado para ayudar a localizar a niños
-    y personas mayores en caso de emergencia.
-  </p>
-</section>
-<section class="section">
-  <h2>Uso responsable del GPS</h2>
-  <ul>
-    <li>🔒 Uso con consentimiento familiar</li>
-    <li>📍 Activación solo en situaciones necesarias</li>
-    <li>🛡️ Seguridad y comodidad garantizadas</li>
-    <li>⚖️ Respeto total a la privacidad</li>
-  </ul>
-</section>
-
-<section class="section light">
-  <h2>Talleres de reciclaje</h2>
-  <p>
-    Organizamos talleres educativos para enseñar cómo reciclar ropa
-    y fomentar un consumo responsable.
-  </p>
-</section>
-    
-<section class="section">
-  <h2>Impacto social y ambiental</h2>
-  <ul>
-    <li>♻️ Reducción de residuos textiles</li>
-    <li>🌍 Cuidado del medio ambiente</li>
-    <li>👨‍👩‍👧 Tranquilidad para las familias</li>
-  </ul>
-</section>
-
-</div>
-
-<!-- ================= EUSKERA ================= -->
-<div id="eu" style="display:none">
-
-<section class="section">
-  <h2>Nor gara?</h2>
-  <p>
-    ReWear Safe ikastetxeko
-    proiektu bat da, bigarren eskuko arropa
-    jantzi jasangarri berrietan bihurtzen duena, ehungintzako
-    birziklapena, berrikuntza teknologikoa eta gizarte‑inpaktua uztartuz.
-  </p>
-</section>
-
-<section class="section light">
-  <h2>Gure ideia</h2>
-  <p>
-    Erabilitako arropa jasotzen dugu eta jantzi berriak sortzen ditugu.
-    Horietako batzuek GPS gailu txiki bat dute, silikonaz babestua eta
-    gerrialdean modu seguruan josia, haurrak eta adineko pertsonak
-    larrialdi egoeretan kokatzen laguntzeko.
-  </p>
-</section>
-  <section class="section">
-  <h2>GPSaren erabilera arduratsua</h2>
-  <ul>
-    <li>🔒 Familiaren baimenarekin soilik</li>
-    <li>📍 Beharrezko egoeretan bakarrik aktibatua</li>
-    <li>🛡️ Segurtasuna eta erosotasuna bermatuta</li>
-    <li>⚖️ Pribatutasunaren errespetu osoa</li>
-  </ul>
-</section>
-
-<section class="section light">
-  <h2>Birziklapen tailerrak</h2>
-  <p>
-    Arropa birziklatzen ikasteko tailer hezitzaileak eskaintzen ditugu,
-    kontsumo arduratsua sustatzeko helburuarekin.
-  </p>
-</section>
     <section class="section">
-  <h2>Gizarte eta ingurumen‑inpaktua</h2>
-  <ul>
-    <li>♻️ Hondakin tekstilen murrizketa</li>
-    <li>🌍 Ingurumenaren babesa</li>
-    <li>👨‍👩‍👧 Familientzako lasaitasuna</li>
-  </ul>
-</section>
+      <h2>¿Quiénes somos?</h2>
+      <p>
+        ReWear Safe es un proyecto escolar que transforma ropa de segunda mano
+        en nuevas prendas sostenibles, combinando reciclaje textil,
+        innovación tecnológica e impacto social.
+      </p>
+    </section>
 
-</div>
+    <section class="section light">
+      <h2>Nuestra idea</h2>
+      <p>
+        Recogemos ropa usada y la reutilizamos para crear nuevas prendas.
+        Algunas incorporan un dispositivo GPS protegido con silicona y cosido
+        de forma segura en la cintura, pensado para ayudar a localizar a niños
+        y personas mayores en caso de emergencia.
+      </p>
+    </section>
 
-<footer>
-  <p>© 2026 ReWear Safe | Proyecto UDIN – 1º Bachillerato</p>
-</footer>
+    <section class="section">
+      <h2>Uso responsable del GPS</h2>
+      <ul>
+        <li>🔒 Uso con consentimiento familiar</li>
+        <li>📍 Activación solo en situaciones necesarias</li>
+        <li>🛡️ Seguridad y comodidad garantizadas</li>
+        <li>⚖️ Respeto total a la privacidad</li>
+      </ul>
+    </section>
+
+    <section class="section light">
+      <h2>Talleres de reciclaje</h2>
+      <p>
+        Organizamos talleres educativos para enseñar cómo reciclar ropa
+        y fomentar un consumo responsable.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Impacto social y ambiental</h2>
+      <ul>
+        <li>♻️ Reducción de residuos textiles</li>
+        <li>🌍 Cuidado del medio ambiente</li>
+        <li>👨‍👩‍👧 Tranquilidad para las familias</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- ================= EUSKERA ================= -->
+  <div id="eu" style="display:none">
+
+    <section class="section">
+      <h2>Nor gara?</h2>
+      <p>
+        ReWear Safe ikastetxeko proiektu bat da, bigarren eskuko arropa
+        jantzi jasangarri berrietan bihurtzen duena, ehungintzako
+        birziklapena, berrikuntza teknologikoa eta gizarte‑inpaktua uztartuz.
+      </p>
+    </section>
+
+    <section class="section light">
+      <h2>Gure ideia</h2>
+      <p>
+        Erabilitako arropa jasotzen dugu eta jantzi berriak sortzen ditugu.
+        Horietako batzuek GPS gailu txiki bat dute, silikonaz babestua eta
+        gerrialdean modu seguruan josia, haurrak eta adineko pertsonak
+        larrialdi egoeretan kokatzen laguntzeko.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>GPSaren erabilera arduratsua</h2>
+      <ul>
+        <li>🔒 Familiaren baimenarekin soilik</li>
+        <li>📍 Beharrezko egoeretan bakarrik aktibatua</li>
+        <li>🛡️ Segurtasuna eta erosotasuna bermatuta</li>
+        <li>⚖️ Pribatutasunaren errespetu osoa</li>
+      </ul>
+    </section>
+
+    <section class="section light">
+      <h2>Birziklapen tailerrak</h2>
+      <p>
+        Arropa birziklatzen ikasteko tailer hezitzaileak eskaintzen ditugu,
+        kontsumo arduratsua sustatzeko helburuarekin.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Gizarte eta ingurumen‑inpaktua</h2>
+      <ul>
+        <li>♻️ Hondakin tekstilen murrizketa</li>
+        <li>🌍 Ingurumenaren babesa</li>
+        <li>👨‍👩‍👧 Familientzako lasaitasuna</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 ReWear Safe | Proyecto UDIN – 1º Bachillerato</p>
+  </footer>
 
 </body>
 </html>
-      
